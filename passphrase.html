@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Passphrase</title>
+<script src="genwords.js"></script>
+<script src="wordlist.js"></script>
+<link href="diceware.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p id="passphrase"></p>
+
+<p>
+This passphrase will protect against anyone except those with the most computer capacity like Google, Facebook and the NSA. If you want a passphrase that even the most powerful on earth can't crack, read the tip below and generate a passphrase of <em>seven</em> words<sup><a title="Passphrases That You Can Memorize — But That Even the NSA Can't Guess" href="https://firstlook.org/theintercept/2015/03/26/passphrases-can-memorize-attackers-cant-guess/">*</a></sup>.
+</p>
+
+<button id="gennew">New</button>
+
+<p>
+Tip: it's even safer to use an old fashioned dice and a big word <a title="7776 english words" href="DicewareEnglish.txt">list</a> instead of using electronics. Check the original <a href="http://world.std.com/~reinhold/diceware.html">Diceware</a> page for instructions on how to execute this.
+</p>
+
+<p>
+Technical details:
+</p>
+<dl>
+<dt>Key space per word:</dt>
+<dd id="wordkeyspace"></dd>
+<dt>Key space six words:</dt>
+<dd id="phrasekeyspace"></dd>
+</dl>
+
+<p>More info can be found at the <a href="http://world.std.com/~reinhold/diceware.html">Diceware Passphrase</a> page.</p>
+
+<p><a href="https://github.com/timkuijsten/diceware.js">source code</a></p>
+
+<script src="passphrase.js"></script>
+</body>
+</html>
