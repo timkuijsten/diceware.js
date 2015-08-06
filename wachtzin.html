@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Wachtzin</title>
+<script src="genwords.js"></script>
+<script src="woordenlijst.js"></script>
+<link href="diceware.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<p id="passphrase"></p>
+
+<p>
+Bovenstaande wachtzin beschermt tegen alle aanvallers behalve tegen partijen met extreem veel rekencapaciteit zoals bijvoorbeed Google, Facebook of de NSA.
+</p>
+
+<button id="gennew">Nieuw</button>
+
+<p>
+Tip: het is nog veiliger om je wachtzin niet electronisch maar met behulp van een ouderwetse dobbelsteen en een grote  <a title="7775 nederlandse woorden" href="DicewareDutch.txt">woordenlijst</a> te genereren. Zie de originele <a href="http://world.std.com/~reinhold/diceware.html">Diceware</a> pagina voor instructies over hoe je dit moet uitvoeren.
+</p>
+
+<p>
+Technisch details:
+</p>
+<dl>
+<dt>Key space per woord:</dt>
+<dd id="wordkeyspace"></dd>
+<dt>Key space zes woorden:</dt>
+<dd id="phrasekeyspace"></dd>
+</dl>
+
+Meer info is te vinden op de <a href="http://world.std.com/~reinhold/diceware.html">Diceware Passphrase</a> pagina.
+
+<script src="wachtzin.js"></script>
+</body>
+</html>
