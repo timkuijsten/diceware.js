@@ -6,7 +6,7 @@ function genWords(list, nrWords) {
   }
 
   if (list.length > 65536) {
-    throw new Error('only the first 65536 entries from the provided word list will be used for picking each word');
+    throw new Error('list can not contain more than 65536 entries');
   }
 
   var bitsNeededPerWord = Math.ceil(Math.log2(list.length));
