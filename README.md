@@ -1,6 +1,13 @@
 # Diceware for in the browser
 
-Simple javascript version of Diceware, currently only containing Dutch words.
+Simple javascript version of Diceware in English and Dutch.
+
+See the html files and genwords.js for the actual implementation and pointers to
+the used word list.
+
+In the future the following word list that contains more than 230.000 words
+might be interesting:
+http://cvsweb.openbsd.org/cgi-bin/cvsweb/src/share/dict/web2
 
 ## License
 
