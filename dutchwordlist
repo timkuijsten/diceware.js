@@ -2,10 +2,10 @@ http://crr.ugent.be/archives/576
 http://crr.ugent.be/programs-data/word-ratings
 
 # create an ordered list of the most frequently used nouns (in the form of it's
-# unique lemma) of 3 to 9 letters (a-z)
+# unique lemma) of 3 to 7 letters (a-z)
 # the type (noun) is in column 11, lemma in column 13 and lemma frequency in column 14
 # skip erroneous "nouns" ending with "je"
-awk '$11 == "N" && match($13, /^[a-z]{3,8}$/) && !match($13, /je$/) { print $14, $13 }' < SUBTLEX-NL.cd-above2.with-pos.txt | sort -nru | awk '{ print $2 }' | sort -u | awk '{ print NR, $0 }' > nl_dice.txt
+awk '$11 == "N" && match($13, /^[a-z]{3,7}$/) && !match($13, /je$/) { print $14, $13 }' < SUBTLEX-NL.cd-above2.with-pos.txt | sort -nru | awk '{ print $2 }' | sort -u | awk '{ print NR, $0 }' > nl_dice.txt
 
 # to javascript
 cat nl_dice.txt | awk 'BEGIN { print "var list = [" } { printf "\42%s\42,", $2 } END { print "\42\42];" }' > woordenlijst.js

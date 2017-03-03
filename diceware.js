@@ -7,7 +7,7 @@ var bnew = document.getElementById('gennew');
 var textNode = document.createTextNode(' ');
 show.appendChild(textNode);
 
-var nrWords = 6;
+var nrWords = 7;
 
 function run() {
   try {
