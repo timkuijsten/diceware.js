@@ -6,7 +6,7 @@ http://crr.ugent.be/programs-data/word-ratings
 # the type (noun) is in column 11, lemma in column 13 and lemma frequency in column 14
 # skip erroneous "nouns" ending with "je"
 # get enough words for rolling 4 dice (6^4)
-awk '($11 == "N" || $11 == "VNW") && match($13, /^[a-z]{3,7}$/) && !match($13, /je$/) { print $14, $13 }' < SUBTLEX-NL.cd-above2.with-pos.txt | sort -nru | awk '{ print $2 }' | sort -u | head -n 1296 > nl_dice.txt
+awk '($11 == "N" || $11 == "VNW") && match($13, /^[a-z]{3,7}$/) && !match($13, /je$/) { print $14, $13 | "sort -nru" }' < SUBTLEX-NL.cd-above2.with-pos.txt | awk '{ print $2 | "sort -u" }' | head -n 1296 > nl_dice.txt
 
 # to javascript
 cat nl_dice.txt | awk 'BEGIN { print "var list = [" } { printf "\42%s\42,", $1 } END { print "\42\42];" }' > woordenlijst.js
