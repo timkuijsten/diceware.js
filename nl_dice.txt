@@ -226,7 +226,6 @@ degene
 dek
 deken
 dekking
-del
 delict
 demon
 detail
@@ -280,7 +279,6 @@ duw
 dwaas
 dwingen
 echo
-een
 eenheid
 eer
 eeuw
@@ -393,8 +391,6 @@ geweld
 gezegde
 gezicht
 gezin
-gezwam
-gij
 gilde
 ginds
 glas
@@ -456,7 +452,6 @@ herrie
 hersens
 herstel
 hertog
-het
 hetero
 hetgeen
 heuvel
