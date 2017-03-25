@@ -192,8 +192,6 @@ crack
 crash
 crew
 crisis
-cut
-cutter
 daad
 daar
 dader
@@ -204,7 +202,6 @@ dam
 dame
 dans
 danser
-danzig
 das
 dat
 data
